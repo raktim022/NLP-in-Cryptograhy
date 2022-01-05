@@ -1,0 +1,8 @@
+txt="""my name is raktim meet then at house name jake me have been quiet raktim the name us at my my name raktim
+nine we could all go at the name near them my is we meet some name by the clock of him near this name bridge"""
+key1="name "
+index=[3,2,2,2,1,9]
+book_cipher(txt,index,key1)
+
+#Output-
+meet me at nine near bridge
