@@ -1,0 +1,15 @@
+import re
+from nltk.tokenize import word_tokenize
+def book_cipher(text,index_arr,key):
+  n=len(index_arr)
+  ans=[]
+  c=0
+  while c<n:
+    word=re.search(key,text)
+    a,b=word.span()
+    text=text[b:]
+    words=word_tokenize(text)
+    decoded=words[index_arr[c]-1]
+    ans.append(decoded)
+    c=c+1
+  return(" ".join(ans))
